@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'booking',
     'api',
     'users',
     'django.contrib.sites',
@@ -140,3 +141,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+# 이미지 파일 저장하려고 만든 것
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

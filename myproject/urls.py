@@ -16,7 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#image 넣으려고 만든거
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #image 넣으려고만든거

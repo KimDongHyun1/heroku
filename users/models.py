@@ -10,3 +10,4 @@ class CustomerUser(AbstractUser):
 class Post(models.Model):
     author = models.ForeignKey(CustomerUser, on_delete='CASCADE')
     message = models.CharField(max_length=255)
+    image = models.ImageField(default='default_image.jpg') #media/default_image.jpg 에서 media 제거함
