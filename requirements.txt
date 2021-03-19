@@ -6,7 +6,7 @@ Django==2.2.2
 django-allauth==0.39.1
 django-auth==0.1.9
 django-rest-auth==0.9.5
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 gunicorn==19.9.0
 idna==2.8
 oauthlib==3.0.1
